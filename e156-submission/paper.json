@@ -1,0 +1,96 @@
+{
+  "title": "CT.gov Condition Hiddenness Map",
+  "slug": "ctgov-condition-hiddenness-map",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-29",
+  "body": "Which therapeutic areas look quietest in ClinicalTrials.gov once older closed interventional studies are grouped into comparable condition families? We analysed 249,507 eligible older studies from the March 29, 2026 full-registry snapshot and assigned each record to one dominant keyword-based family using registry condition strings and titles. Primary comparisons focused on ghost-protocol rates, two-year no-results rates, and the share with both results and publication visibility across common families. Oncology formed the largest named family at 42,344 eligible older studies, creating the biggest absolute stock of hidden evidence. Healthy-volunteer studies had the highest ghost-protocol rate among common families at 63.5 percent, while metabolic and gastrointestinal groupings also remained heavily obscured. Infectious-disease studies were relatively more visible, reaching a 20.6 percent fully visible rate despite still carrying substantial non-reporting across mapped families in this atlas. Because the classification is keyword-based and single-label, multi-topic trials can be compressed into one family and some records remain in a broad other bucket.",
+  "word_count": 156,
+  "sentence_count": 7,
+  "sentences": [
+    {
+      "role": "Question",
+      "text": "Which therapeutic areas look quietest in ClinicalTrials.gov once older closed interventional studies are grouped into comparable condition families?"
+    },
+    {
+      "role": "Dataset",
+      "text": "We analysed 249,507 eligible older studies from the March 29, 2026 full-registry snapshot and assigned each record to one dominant keyword-based family using registry condition strings and titles."
+    },
+    {
+      "role": "Method",
+      "text": "Primary comparisons focused on ghost-protocol rates, two-year no-results rates, and the share with both results and publication visibility across common families."
+    },
+    {
+      "role": "Primary result",
+      "text": "Oncology formed the largest named family at 42,344 eligible older studies, creating the biggest absolute stock of hidden evidence."
+    },
+    {
+      "role": "Secondary result",
+      "text": "Healthy-volunteer studies had the highest ghost-protocol rate among common families at 63.5 percent, while metabolic and gastrointestinal groupings also remained heavily obscured."
+    },
+    {
+      "role": "Interpretation",
+      "text": "Infectious-disease studies were relatively more visible, reaching a 20.6 percent fully visible rate despite still carrying substantial non-reporting across mapped families in this atlas."
+    },
+    {
+      "role": "Boundary",
+      "text": "Because the classification is keyword-based and single-label, multi-topic trials can be compressed into one family and some records remain in a broad other bucket."
+    }
+  ],
+  "notes": {
+    "app": "CT.gov Condition Hiddenness Map dashboard",
+    "data": "Eligible older closed interventional studies classified into dominant condition families from registry condition strings and titles",
+    "code": "https://github.com/mahmood726-cyber/ctgov-condition-hiddenness-map",
+    "doi": "",
+    "version": "1.0.0",
+    "date": "2026-03-29",
+    "validation": "FULL REGISTRY RUN"
+  },
+  "type": "methods",
+  "primary_estimand": "Ghost-protocol rate by keyword-classified condition family among eligible older closed interventional studies",
+  "validation": {
+    "status": "fail",
+    "checks": [
+      {
+        "name": "single paragraph",
+        "ok": true,
+        "detail": "Body must not contain blank-line paragraph breaks."
+      },
+      {
+        "name": "sentence count",
+        "ok": true,
+        "detail": "Found 7 sentences."
+      },
+      {
+        "name": "word count",
+        "ok": true,
+        "detail": "Found 156 words."
+      },
+      {
+        "name": "no headings",
+        "ok": true,
+        "detail": "No markdown headings allowed in body."
+      },
+      {
+        "name": "no links",
+        "ok": true,
+        "detail": "No links or DOI links allowed in body."
+      },
+      {
+        "name": "result sentence has interval",
+        "ok": true,
+        "detail": "Sentence 4 should include a quantitative result such as a percentage, count, or interval."
+      },
+      {
+        "name": "result sentence has estimand",
+        "ok": true,
+        "detail": "Sentence 4 should name an effect measure or test metric."
+      },
+      {
+        "name": "boundary sentence present",
+        "ok": false,
+        "detail": "Sentence 7 should express a limitation, harm, or scope boundary."
+      }
+    ]
+  },
+  "schema": "e156-v0.2"
+}
